@@ -1,66 +1,151 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🤖 AERP Robotics Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+> Dynamic website developed as a Professional Aptitude Project (PAP) for the Programming and Robotics Club of Agrupamento de Escolas Raul Proença (AERP).
+> 
 
-## About Laravel
+## 📌 About
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+The **AERP Robotics Website** was created to provide the club with a modern online presence while supporting its internal management.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+The project is divided into a **public area**, focused on presenting the club, its projects, competitions, achievements and news, and a **restricted area** for registered members and authorized users.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🎯 Main Goals
 
-## Learning Laravel
+- Create a modern and responsive website for the Robotics Club.
+- Promote the club’s activities, projects and achievements.
+- Provide tools for internal management.
+- Implement authentication and role-based access control.
+- Create a solid foundation for future improvements.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## ✨ Features
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+### 🌐 Public Area
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Club information and objectives.
+- Projects and competitions.
+- Achievements and results.
+- News and updates.
+- Image galleries.
+- Useful external links.
 
-## Laravel Sponsors
+### 🔐 Authentication
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- User registration.
+- Login and logout.
+- Form validation.
+- Protected areas.
+- Different access levels.
 
-### Premium Partners
+### 👥 Member Management
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+Authorized users can view, edit and remove member records and manage information required for club activities and competitions.
 
-## Contributing
+### 📰 News Management
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+The backoffice allows authorized users to create, edit, delete and view news. **Summernote** is used for rich-text editing, with published content displayed on the public website.
 
-## Code of Conduct
+### 🤖 Project Management
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Projects can be created, edited, deleted and viewed through the backoffice, including information such as descriptions, technologies, images and links.
 
-## Security Vulnerabilities
+### 📅 Attendance
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Registered members can mark their attendance during club sessions, providing an organized record of participation.
 
-## License
+### 🛡️ Roles & Permissions
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+**Laratrust** was used to control access according to user roles:
+
+- Students
+- Teachers
+- Administrators
+
+## 🗄️ Database
+
+The project uses **MySQL** and Laravel migrations to manage the database structure.
+
+The database includes entities related to users, projects, attendance, news, categories, competitions, galleries, sponsors, roles, permissions, classes and competition results.
+
+**MySQL Workbench** was used to inspect and validate the database during development.
+
+## 🛠️ Technologies
+
+| Technology | Purpose |
+| --- | --- |
+| 🐘 PHP | Server-side programming |
+| 🔥 Laravel | Web framework |
+| 🗄️ MySQL | Database |
+| 🌐 HTML5 | Structure |
+| 🎨 CSS3 | Styling |
+| ⚡ JavaScript | Client-side functionality |
+| 🧩 Bootstrap | Responsive UI |
+| 🔐 Laratrust | Roles and permissions |
+| 🔎 Select2 | Enhanced form fields |
+| ✍️ Summernote | Rich-text editing |
+| 📦 Composer | PHP dependencies |
+| 📦 NPM | Front-end dependencies |
+| 🌍 Apache | Web server |
+| 💻 Laragon | Development environment |
+| 🔀 Git / GitHub | Version control |
+
+## 🏗️ Laravel Structure
+
+The project follows Laravel’s MVC structure, separating models, controllers, views, routes, database migrations and public assets.
+
+The frontoffice and backoffice were organized into separate view sections to make the project easier to maintain and expand.
+
+## 🧪 Testing
+
+The system was tested throughout development, including:
+
+- Registration and login.
+- Logout and protected areas.
+- Form validation.
+- CRUD operations.
+- Database relationships.
+- Role-based permissions.
+- Responsive behaviour.
+
+During development, several problems were solved, including database migration conflicts, variable inconsistencies and Laravel/browser caching issues.
+
+## 🔒 Security
+
+The project uses authentication, role-based authorization and server-side validation to restrict access to protected functionality.
+
+Sensitive configuration files and real user data should not be included when publishing the project publicly.
+
+## 🚀 Running the Project
+
+To run the project locally, install PHP, Composer, MySQL, Node.js/NPM and a compatible web server.
+
+After obtaining the repository, install its dependencies, configure the database connection in the `.env` file, run the Laravel migrations, build the front-end assets and start the Laravel development server.
+
+The exact setup may vary depending on the local environment.
+
+## 🏆 Project Recognition
+
+A version of the project was submitted to **Sistestar 12 - 2025**, an initiative promoted by DecoJovem.
+
+The project reached the **second stage out of three**.
+
+## 📈 Future Improvements
+
+The project identified several possible improvements, including:
+
+- Email-based password confirmation.
+- More dynamic scheduling.
+- Further interface and usability improvements.
+- Additional management automation.
+- Further optimization and scalability.
+
+## 👨‍💻 Author
+
+**Almeida**
+
+Professional Aptitude Project — AERP Robotics
+
+Academic Year: 2024/2025
+
+---
+
+⭐ A practical project combining Laravel, PHP, MySQL, authentication, authorization and content management.
